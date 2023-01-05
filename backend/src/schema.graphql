@@ -1,0 +1,83 @@
+scalar Date
+
+type Query {
+  chatBox(name1: String!, name2: String!): ChatBox!
+  allPost: [Post!]
+  myPost(account: String!): User
+  checkUser(account: String!, password: String!): User
+  postMsg(id: ID!): [Message!]
+}
+
+type Mutation {
+  createChatBox(name1: String!, name2: String): ChatBox!
+
+  createMessage(id: ID!, sender: String!, body: String!): [Message!]
+  createPost(input: CreatePostInput!, account: String!): Post
+  updatePost(id: ID, input: UpdateItemInput!): Post
+  addUserToPost(account: String!, id: ID): Post
+  deletePost(id: ID!): ID
+  createUser(input: CreateUserInput!): User
+  attendPost(id: ID!, account: String!): User
+}
+
+type Subscription {
+  message(id: ID!): [Message!]
+  postCreated: Post!
+  postAttended(account: String!): [Post!]
+  UserCreated: User!
+}
+
+input CreatePostInput {
+  title: String!
+  date: Date!
+  category: String!
+  location: String!
+  context: String!
+}
+
+input UpdateItemInput {
+  title: String
+  date: Date
+  category: String
+  location: String
+  context: String
+}
+
+input CreateUserInput {
+  name: String!
+  account: String!
+  password: String!
+}
+
+type Post {
+  id: ID!
+  title: String!
+  date: Date!
+  category: String!
+  location: String!
+  context: String!
+  chatBox: ChatBox
+  host: User!
+  users: [User!]
+  messages: [Message!]
+}
+
+type User {
+  name: String
+  account: String
+  password: String
+  checked: Boolean
+  posts: [Post!]
+  cahtBoxes: [ChatBox!]
+}
+
+type ChatBox {
+  users: [User!]
+  messages: [Message!]
+}
+
+type Message {
+  name: String!
+  sender: String!
+  body: String!
+}
