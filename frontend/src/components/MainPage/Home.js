@@ -54,7 +54,7 @@ function Home({ account, setMyPost, user }) {
           }}
           onClick={handlePost}
         >
-          <Typography>哈囉！, {user}. 想舉辦甚麼活動呢?</Typography>
+          <Typography>哈囉，{user}！ 想舉辦甚麼活動呢?</Typography>
         </Button>
       </Paper>
       {allPostData.allPost.map((items) => {
@@ -62,10 +62,11 @@ function Home({ account, setMyPost, user }) {
           dformat =
             [d.getMonth() + 1, d.getDate(), d.getFullYear()].join("/") +
             " " +
-            [d.getHours(),
-               d.getMinutes(),
-                // d.getSeconds()
-              ].join(":");
+            [
+              d.getHours(),
+              d.getMinutes(),
+              // d.getSeconds()
+            ].join(":");
 
         return (
           <Singlepost
@@ -76,7 +77,11 @@ function Home({ account, setMyPost, user }) {
             title={items.title}
             type={items.category}
             participant={items.users}
-            attended={myPostData? myPostData.myPost.posts.some((post)=>post.id === items.id): false}
+            attended={
+              myPostData
+                ? myPostData.myPost.posts.some((post) => post.id === items.id)
+                : false
+            }
             host={items.host.name}
             location={items.location}
             content={items.context}
