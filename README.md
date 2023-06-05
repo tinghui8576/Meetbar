@@ -1,8 +1,5 @@
 # Demo Video
-
-<div align="center">
-  <a href="https://www.youtube.com/watch?v=PMlr5LC3iqo&ab_channel=tzuwei"><img width="200" alt="Screen Shot 2023-06-05 at 11 59 32 PM" src="https://github.com/tinghui8576/Meetbar/assets/55122196/6a4c81c1-6f61-48a5-8924-1f8e07397cd2"></a>
-</div>
+[![Demo](https://i.ytimg.com/vi/PMlr5LC3iqo/maxresdefault.jpg)](https://www.youtube.com/watch?v=PMlr5LC3iqo&ab_channel=tzuwei "Demo")
 # 操作方式 Instruction
 
 ## 如何於下載後於本地端操作 How to open after downloading to the Local
