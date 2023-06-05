@@ -1,16 +1,18 @@
-# 操作方式
+# Demo Video
+[![IMAGE ALT TEXT](/frontend/public/images.jpg)](https://www.youtube.com/watch?v=PMlr5LC3iqo&ab_channel=tzuwei)
+# 操作方式 Instruction
 
-## Local
+## 如何於下載後於本地端操作 How to open after downloading to the Local
 
 Step 1: yarn install:all  
 Setp 2: yarn start  
 Step 3: yarn server
 
-_或_
+_或 Or_
 
 Step 1: docker build -t [name] .  
 Step 2: docker run --name [name] -p 4000:4000 [name]  
-其餘操作與 Deploy 處無異
+其餘操作與 Deploy 處無異 
 
 ## Deploy
 
