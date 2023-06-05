@@ -1,5 +1,6 @@
 # Demo Video
-[![IMAGE ALT TEXT](/frontend/public/images.jpg)](https://www.youtube.com/watch?v=PMlr5LC3iqo&ab_channel=tzuwei)
+[<img width="283" alt="Screen Shot 2023-06-05 at 11 59 32 PM" src="https://github.com/tinghui8576/Meetbar/assets/55122196/6a4c81c1-6f61-48a5-8924-1f8e07397cd2">](https://www.youtube.com/watch?v=PMlr5LC3iqo&ab_channel=tzuwei)
+
 # 操作方式 Instruction
 
 ## 如何於下載後於本地端操作 How to open after downloading to the Local
@@ -28,16 +29,16 @@ server 無需任何操作方式，皆已完整連接，會由前端操作控制�
 
 更多細節可以參考 HackMD: [聚會吧](https://hackmd.io/@DVCmcNLyR3yTBuTONeC_Tw/Group6/edit)
 
-## 每位組員之負責項目
+## 每位組員之負責項目 Work distribution
 
-#### **B07611046 鄭婷卉**
+#### **B07611046 鄭婷卉 Tinghui**
 
 前後端串聯，將後端收到的資訊與前段頁面進行整合，與最終部屬。
 
-#### **B08611010 謝方智**
+#### **B08611010 謝方智 Andrew**
 
 前端，運用 material ui 進行前端介面建立與優化以及前端邏輯判斷。
 
-#### **B08611033 邱子瑋**
+#### **B08611033 邱子瑋 Tzewei**
 
 後端，利用 graphql 與資料庫互動以及其他後端簡單邏輯判斷。
