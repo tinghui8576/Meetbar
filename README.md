@@ -1,8 +1,9 @@
-# Demo Video
-[![Demo](https://i.ytimg.com/vi/PMlr5LC3iqo/maxresdefault.jpg)](https://www.youtube.com/watch?v=PMlr5LC3iqo&ab_channel=tzuwei "Demo")
-# 操作方式 Instruction
+## Demo Video
+[![Demo](https://i.ytimg.com/vi/PMlr5LC3iqo/maxresdefault.jpg)](https://www.youtube.com/watch?v=PMlr5LC3iqo&ab_channel=tzuwei "Demo") <br>
 
-## 如何於下載後於本地端操作 How to open after downloading to the Local
+## 操作方式 Instruction
+
+### 如何於下載後於本地端操作 How to open after downloading to the Local
 
 Step 1: yarn install:all  
 Setp 2: yarn start  
@@ -14,7 +15,7 @@ Step 1: docker build -t [name] .
 Step 2: docker run --name [name] -p 4000:4000 [name]  
 其餘操作與 Deploy 處無異 
 
-## Deploy
+### Deploy
 
 server 無需任何操作方式，皆已完整連接，會由前端操作控制。透過 graphql 去 mongodb 將對應的對應的從資料庫取回，並使用 Websocket 訂閱通知，將所得之資訊回傳給前端。
 
